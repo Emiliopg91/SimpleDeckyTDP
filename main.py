@@ -33,9 +33,7 @@ class Plugin:
     try:
       with file_timeout.time_limit(5):
         response['scalingDriver'] = cpu_utils.get_scaling_driver()
-        decky_plugin.logger.info('before cpu boost check')
         response['supportsCpuBoost'] = cpu_utils.supports_cpu_boost()
-        decky_plugin.logger.info('after cpu boost check')
 
         response['powerControlsEnabled'] = power_utils.power_controls_enabled()
         pstate_status = cpu_utils.get_pstate_status()

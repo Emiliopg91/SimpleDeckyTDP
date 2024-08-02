@@ -105,12 +105,13 @@ def set_cpb_boost(enabled):
           continue
 
 def supports_cpu_boost():
-  if os.path.exists(PSTATE_BOOST_PATH) or os.path.exists(BOOST_PATH):
-    return True
+  with file_timeout.time_limit(4):
+    if os.path.exists(PSTATE_BOOST_PATH) or os.path.exists(BOOST_PATH):
+      return True
 
-  cpu_boost_paths = get_cpb_boost_paths()
-  if len(cpu_boost_paths) > 0 and os.path.exists(cpu_boost_paths[0]):
-    return True
+    cpu_boost_paths = get_cpb_boost_paths()
+    if len(cpu_boost_paths) > 0 and os.path.exists(cpu_boost_paths[0]):
+      return True
 
   return False
 

@@ -1,6 +1,6 @@
 # SimpleDeckyTDP
 
-[![](https://img.shields.io/github/downloads/aarron-lee/SimpleDeckyTDP/total.svg)](https://github.com/aarron-lee/SimpleDeckyTDP/releases)
+[![](https://img.shields.io/github/downloads/Emiliopg91/SimpleDeckyTDP/total.svg)](https://github.com/Emiliopg91/SimpleDeckyTDP/releases)
 
 This is a (formerly simple) Linux TDP Decky Plugin that wraps ryzenadj. Intended for devices compatible with ryzenadj.
 
@@ -84,12 +84,12 @@ Decky Loader must already be installed. If using ryzenadj for TDP control, secur
 Run the following in terminal, then reboot. Note that this works both for installing or updating the plugin
 
 ```
-curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh
+curl -L https://github.com/Emiliopg91/SimpleDeckyTDP/raw/main/install.sh | sh
 ```
 
 ### Manual Install
 
-Download the latest release from the [releases page](https://github.com/aarron-lee/SimpleDeckyTDP/releases)
+Download the latest release from the [releases page](https://github.com/Emiliopg91/SimpleDeckyTDP/releases)
 
 Unzip the `tar.gz` file, and move the `SimpleDeckyTDP` folder to your `$HOME/homebrew/plugins` directory
 
@@ -109,7 +109,7 @@ Dependencies:
 - fully functional ryzenadj
 
 ```bash
-git clone https://github.com/aarron-lee/SimpleDeckyTDP.git
+git clone https://github.com/Emiliopg91/SimpleDeckyTDP.git
 
 cd SimpleDeckyTDP
 
@@ -142,7 +142,7 @@ sudo systemctl restart plugin_loader.service
 
 ### Desktop App
 
-[SimpleDeckyTDP-Desktop App](https://github.com/aarron-lee/SimpleDeckyTDP-Desktop) - Desktop port of SimpleDeckyTDP
+[SimpleDeckyTDP-Desktop App](https://github.com/Emiliopg91/SimpleDeckyTDP-Desktop) - Desktop port of SimpleDeckyTDP
 
 - Note: the Desktop app does not have full feature parity with the Decky Plugin. Certain features cannot be implemented yet, such as:
   - per-game profiles
@@ -183,7 +183,7 @@ First try updating the plugin to the latest version.
 
 ```
 # update script
-curl -L https://github.com/aarron-lee/SimpleDeckyTDP/raw/main/install.sh | sh
+curl -L https://github.com/Emiliopg91/SimpleDeckyTDP/raw/main/install.sh | sh
 ```
 
 If this doesn't fix your issue, next try deleting your `$HOME/homebrew/settings/SimpleDeckyTDP/settings.json` file, and rebooting.

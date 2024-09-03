@@ -63,7 +63,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           body: |
             SimpleDeckyTDP
-          draft: true
+          draft: false
           prerelease: contains(github.ref, 'pre')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
